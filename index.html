@@ -1,638 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Zindot</title>
-    <link href="img/zindotlogo.ico" rel="icon" />
-  </head>
-  <body>
-    <!-- Header starts-->
-    <header
-      class="text-gray-800 font-semibold md:sticky top-0 z-10 body-font backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 shadow-lg"
-    >
-      <div
-        class="container mx-auto flex px-5 py-4 flex-row items-center justify-between"
-      >
-        <a
-          class="flex title-font font-medium items-center text-gray-700 font-bold md:mb-0"
-        >
-          <img src="img/zindothead.png" alt="Zindot" width="60" />
-          <span
-            class="ml-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-violet-700 via-purple-800 to-violet-600"
-          >
-            <h2>Zindot.</h2></span
-          >
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <nav
-          class="md:ml-auto md:flex flex-wrap items-center text-base justify-center hidden"
-        >
-          <a class="mr-5 hover:text-white" href="index.html">Home</a>
-          <a class="mr-5 hover:text-white" href="index.html">Services</a>
-          <a class="mr-5 hover:text-white" href="internship.html">Trainings</a>
-          <a class="mr-5 hover:text-white" href="#contact">Contact Us</a>
-        </nav>
-        <!--
-      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Activities
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Zindot</title>
+  <link href="img/zindotlogo.ico" rel="icon" />
+</head>
+
+<body>
+  <!-- Header starts-->
+  <header
+    class="text-gray-800 font-semibold md:sticky top-0 z-10 body-font backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 shadow-lg">
+    <div class="container mx-auto flex px-5 py-4 flex-row items-center justify-between">
+      <a class="flex title-font font-medium items-center text-gray-700 font-bold md:mb-0">
+        <img src="img/zindothead.png" alt="Zindot" width="60" />
+        <span
+          class="ml-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-violet-700 via-purple-800 to-violet-600">
+          <h2>Zindot.</h2>
+        </span>
+      </a>
+
+      <nav
+        class="md:ml-auto md:flex flex-wrap items-center text-base justify-center hidden text-transparent bg-clip-text bg-gradient-to-br from-violet-500 via-purple-500 to-violet-400">
+        <a class="mx-5 hover:text-lg" href="index.html">Home</a>
+        <a class="mx-5 hover:text-lg" href="index.html">Services</a>
+        <a class="mx-5 hover:text-lg" href="internship.html">Training</a>
+        <a class="mx-5 hover:text-lg" href="#contact">Contact Us</a>
+      </nav>
+
+      <div id="menuicon" class="text-violet-700 md:hidden ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 hover:h-10 hover:w-10" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
-      </button>
-      -->
-        <div class="text-slate-700 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </div>
+
       </div>
-    </header>
-    <!-- Header ends-->
+      <div id="xicon" class="hidden text-violet-700 md:hidden ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 hover:h-10 hover:w-10" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
 
-    <!-- Hero begins-->
+      </div>
 
-    <section
-      class="text-gray-700 body-font"
-      style="background-image: url(img/bgimg.jpg)"
-    >
+    </div>
+    <div id="dropmenu" class="hidden md:hidden ">
+      <ul class="px-4 font">
+        <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-violet-600 font-semibold">Home</a>
+        </li>
+        <li><a href="#services"
+            class="block text-sm px-2 py-4 hover:text-violet-600 transition duration-300">Services</a>
+        </li>
+        <li><a href="internship.html"
+            class="block text-sm px-2 py-4 hover:text-violet-600 transition duration-300">Training</a>
+        </li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 hover:text-violet-600 transition duration-300">Contact
+            Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div id="dropmenu" class="flex border-gray-400 w-[40%] md:hidden">
+      <ul class="mx-4 p-4 sticky bg-zinc-200 rounded left-0">
+        <li class="text-2xl px-2 py-2">Home</li>
+        <li class="text-2xl px-2 py-2">Services</li>
+        <li class="text-2xl px-2 py-2">Training</li>
+        <li class="text-2xl px-2 py-2">Contact</li>
+      </ul>
+    </div> -->
+  </header>
+  <!-- Header ends-->
+
+  <!-- Hero begins-->
+
+  <section class="text-gray-700 body-font md:h-screen" style="background-image: url(img/bgimg.jpg)">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center md:max-w-[1240px]">
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center md:max-w-[1240px]"
-      >
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-        >
-          <h1
-            class="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-800"
-          >
-            Technology and Education <br class="hidden lg:inline-block" />Roads
-            to a Brighter Future
-          </h1>
-          <p class="mb-8 leading-relaxed text-xl">
-            Understand how the world works. Learn, Apply and Grow with us in
-            every aspect of life.
-          </p>
-          <div class="flex justify-center">
-            <button
-              class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
-            >
-              <a href="index.html">Services</a>
-            </button>
-            <!--<button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>-->
-          </div>
-        </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="img/zin.png"
-          />
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-800">
+          Technology and Education <br class="hidden lg:inline-block" />Roads
+          to a Brighter Future
+        </h1>
+        <p class="mb-8 leading-relaxed text-lg md:text-xl">
+          Understand how the world works. Learn, Apply and Grow with us in
+          every aspect of life.
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+            <a href="index.html">Services</a>
+          </button>
+          <!--<button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>-->
         </div>
       </div>
-    </section>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="img/zin.png" />
+      </div>
+    </div>
+  </section>
 
-    <!--Hero ends -->
+  <!--Hero ends -->
 
-    <!-- Content -->
-    <section class="text-gray-700 body-font bg-white" id="services">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h2
-            class="text-s text-purple-500 tracking-widest font-medium title-font mb-1"
-          >
-            'Technology' is our middle name and we design and develop the
-            best-in-class solutions for all your needs.
+  <!-- Content -->
+  <section class="text-gray-700 body-font bg-white" id="services">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-s text-purple-500 tracking-widest font-medium title-font mb-4">
+          'Technology' is our middle name and we design and develop the
+          best-in-class solutions for all your needs.
+        </h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">
+          Our Services
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Zindot Technologies bring you a handful of services under one roof.
+          From software development to one-to-one mentoring for technical
+          aspirants. We provide project assistance to students and
+          industrialists and undertake projects offering the best standards.
+          Zindot is a one stop destination for all your technical
+          requirements!
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l md:border-0 border-gray-400">
+          <a class="text-purple-500 inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </a>
+
+          <h2 class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2">
+            Embedded system and PCB design
           </h2>
-          <h1
-            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800"
-          >
-            Our Services
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Zindot Technologies bring you a handful of services under one roof.
-            From software development to one-to-one mentoring for technical
-            aspirants. We provide project assistance to students and
-            industrialists and undertake projects offering the best standards.
-            Zindot is a one stop destination for all your technical
-            requirements!
+          <p class="leading-relaxed text-base mb-4">
+            The embedded system wing of ZINDOT is just the right place for all
+            your custom requirements. With best solutions for your problems in
+            minimal time, we will fulfil your requirements.
           </p>
-        </div>
-        <div class="flex flex-wrap">
-          <div
-            class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l md:border-0 border-gray-400"
-          >
-            <a class="text-purple-500 inline-flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                />
-              </svg>
-            </a>
-
-            <h2
-              class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2"
-            >
-              Embedded system and PCB design
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
-              The embedded system wing of ZINDOT is just the right place for all
-              your custom requirements. With best solutions for your problems in
-              minimal time, we will fulfil your requirements.
-            </p>
-            <!-- <a class="text-purple-500 inline-flex items-center">more
+          <!-- <a class="text-purple-500 inline-flex items-center">more
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
         -->
-          </div>
-          <div
-            class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400"
-          >
-            <a class="text-purple-500 inline-flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                />
-              </svg>
-            </a>
-            <h2
-              class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2"
-            >
-              Internet of Things
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
-              The Internet of Things, or IoT for short, is the concept of
-              connecting physical objects to the Internet so that they can be
-              either controlled or monitored remotely, with the goal of gaining
-              insights that help improve personal or business outcomes. We at
-              Zindot design and develop unique, tailor-made IoT solutions.
-            </p>
-          </div>
-          <div
-            class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400"
-          >
-            <a class="text-purple-500 inline-flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
-            </a>
-            <h2
-              class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2"
-            >
-              Rapid Prototyping
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
-              With 3D printers taking on the industry with its ability to cater
-              to the needs of anything and everything we bring you the service
-              of building your 3D models. Learn early insights about your
-              designs or improve them with our team.
-            </p>
-          </div>
-          <div
-            class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400"
-          >
-            <a class="text-purple-500 inline-flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-                />
-              </svg>
-            </a>
-            <h2
-              class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2"
-            >
-              Web and App Development
-            </h2>
-            <p class="leading-relaxed text-base mb-4">
-              Zindot has the best web and native app development team with
-              updated and new stacks to flexible and robust on-cloud solutions.
-              The best architecture for your business with strategic insights to
-              generate greater brand engagement, higher conversions and
-              measurable results.
-            </p>
-          </div>
         </div>
-        <!--<button class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Button</button>-->
-      </div>
-    </section>
-
-    <!--Content Ends-->
-    <!-- Statistics -->
-
-    <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4 text-center">
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
-              55
-            </h2>
-            <p class="leading-relaxed">Projects</p>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
-              21
-            </h2>
-            <p class="leading-relaxed">Clients</p>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
-              1200+
-            </h2>
-            <p class="leading-relaxed">Students Trained</p>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
-              10+
-            </h2>
-            <p class="leading-relaxed">Training Programmes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- statistics ends -->
-
-    <!-- Registration-->
-    <section class="text-gray-500 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div
-          class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
-        >
-          <h1
-            class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white"
-          >
-            Are you ready to Kickstart and Pump your Career? Apply for the
-            internship and training by completing the form
-          </h1>
-          <a href="https://bit.ly/Zindot"
-            ><button
-              class="flex-shrink-0 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg mt-10 sm:mt-0"
-            >
-              Apply
-            </button></a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- Registration-->
-
-    <!-- Testimonials-->
-    <section class="text-gray-500 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <h1
-          class="text-3xl font-medium title-font text-white mb-12 text-center"
-        >
-          Testimonials
-        </h1>
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 md:w-1/2 w-full">
-            <div class="h-full bg-gray-800 p-8 rounded">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="block w-5 h-5 text-gray-600 mb-4"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="leading-relaxed mb-6">
-                Zindot helped me take my business online. They designed a modern
-                website that showcased my interior design projects as well as
-                for my e-commerce needs. It really helped my business.
-              </p>
-              <a class="inline-flex items-center">
-                <img
-                  alt="testimonial"
-                  src="img/zindotlogo.ico"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                />
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-white"
-                    >Muhammed Nowfal</span
-                  >
-                  <span class="text-gray-600 text-sm"
-                    >Director | Evergreen Interiors</span
-                  >
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/2 w-full">
-            <div class="h-full bg-gray-800 p-8 rounded">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="block w-5 h-5 text-gray-600 mb-4"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="leading-relaxed mb-6">
-                Zindot helped me in developing a prototype for my research
-                project in a very short time. They also helped me with insights
-                for the further development and helped me acheive grants for the
-                same.
-              </p>
-              <a class="inline-flex items-center">
-                <img
-                  alt="testimonial"
-                  src="img/zindotlogo.ico"
-                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                />
-                <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-white"
-                    >Sarath M</span
-                  >
-                  <span class="text-gray-600 text-sm"
-                    >Research Student | CUSAT</span
-                  >
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Testimonial ends-->
-
-    <!--Contact-->
-
-    <section class="text-gray-500 bg-gray-900 body-font relative">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1
-            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
-          >
-            Contact Us
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Feel free to contact us regarding any queries
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400">
+          <a class="text-purple-500 inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+          </a>
+          <h2 class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2">
+            Internet of Things
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            The Internet of Things, or IoT for short, is the concept of
+            connecting physical objects to the Internet so that they can be
+            either controlled or monitored remotely, with the goal of gaining
+            insights that help improve personal or business outcomes. We at
+            Zindot design and develop unique, tailor-made IoT solutions.
           </p>
         </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 w-1/2">
-              <input
-                class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-purple-500 text-base px-4 py-2"
-                placeholder="Name"
-                type="text"
-              />
-            </div>
-            <div class="p-2 w-1/2">
-              <input
-                class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-purple-500 text-base px-4 py-2"
-                placeholder="Email"
-                type="email"
-              />
-            </div>
-            <div class="p-2 w-full">
-              <textarea
-                class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none h-48 focus:border-purple-500 text-base px-4 py-2 resize-none block"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <div class="p-2 w-full">
-              <a
-                class="text-purple-500"
-                href="mailto:zindottechnologies@gmail.com"
-                ><button
-                  class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg"
-                >
-                  Send
-                </button></a
-              >
-            </div>
-            <div
-              class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center"
-            >
-              <a
-                class="text-purple-500"
-                href="mailto:zindottechnologies@gmail.com"
-                >zindottechnologies@gmail.com</a
-              >
-              <br />Phone no:
-              <a class="text-purple-500" href="tel:6238296993">6238296993</a>
-              <p class="leading-normal my-5">
-                Kochi
-                <br />
-              </p>
-              <span class="inline-flex">
-                <a class="text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                    ></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-                    ></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <rect
-                      width="20"
-                      height="20"
-                      x="2"
-                      y="2"
-                      rx="5"
-                      ry="5"
-                    ></rect>
-                    <path
-                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-                    ></path>
-                  </svg>
-                </a>
-                <a class="ml-4 text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                    ></path>
-                  </svg>
-                </a>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400">
+          <a class="text-purple-500 inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </a>
+          <h2 class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2">
+            Rapid Prototyping
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            With 3D printers taking on the industry with its ability to cater
+            to the needs of anything and everything we bring you the service
+            of building your 3D models. Learn early insights about your
+            designs or improve them with our team.
+          </p>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-gray-400">
+          <a class="text-purple-500 inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+          </a>
+          <h2 class="text-lg sm:text-xl text-gray-800 font-medium title-font mb-2">
+            Web and App Development
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            Zindot has the best web and native app development team with
+            updated and new stacks to flexible and robust on-cloud solutions.
+            The best architecture for your business with strategic insights to
+            generate greater brand engagement, higher conversions and
+            measurable results.
+          </p>
+        </div>
+      </div>
+      <!--<button class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Button</button>-->
+    </div>
+  </section>
+
+  <!--Content Ends-->
+  <!-- Statistics -->
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+            55
+          </h2>
+          <p class="leading-relaxed">Projects</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+            21
+          </h2>
+          <p class="leading-relaxed">Clients</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+            1200+
+          </h2>
+          <p class="leading-relaxed">Students Trained</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+            10+
+          </h2>
+          <p class="leading-relaxed">Training Programmes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- statistics ends -->
+
+  <!-- Registration-->
+  <section class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">
+          Are you ready to Kickstart and Pump your Career? Apply for the
+          internship and training by completing the form
+        </h1>
+        <a href="https://bit.ly/Zindot"><button
+            class="flex-shrink-0 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg mt-10 sm:mt-0">
+            Apply
+          </button></a>
+      </div>
+    </div>
+  </section>
+  <!-- Registration-->
+
+  <!-- Testimonials-->
+  <section class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">
+        Testimonials
+      </h1>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-800 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-600 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+              Zindot helped me take my business online. They designed a modern
+              website that showcased my interior design projects as well as
+              for my e-commerce needs. It really helped my business.
+            </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="img/zindotlogo.ico"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-white">Muhammed Nowfal</span>
+                <span class="text-gray-600 text-sm">Director | Evergreen Interiors</span>
               </span>
-            </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-800 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-600 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+              Zindot helped me in developing a prototype for my research
+              project in a very short time. They also helped me with insights
+              for the further development and helped me acheive grants for the
+              same.
+            </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="img/zindotlogo.ico"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-white">Sarath M</span>
+                <span class="text-gray-600 text-sm">Research Student | CUSAT</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--Contact Ends-->
+  <!--Testimonial ends-->
 
-    <!--Footer-->
+  <!--Contact-->
 
-    <footer class="text-gray-500 bg-gray-900 body-font">
-      <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
-      >
-        <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
-        >
-          <img src="img/zindotlogo.ico" alt="Zindot" width="50" height="50" />
-          <span class="ml-3 text-xl">ZINDOT</span>
-        </a>
-        <p
-          class="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
-        >
-          © 2020 Zindot
-          <!-- <a href="" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer"></a> -->
+  <section class="text-gray-500 bg-gray-900 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          Contact Us
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Feel free to contact us regarding any queries
         </p>
-        <span
-          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
-        >
-          <a class="text-gray-600">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-600">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-600">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path
-                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-600">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
       </div>
-    </footer>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <input
+              class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-purple-500 text-base px-4 py-2"
+              placeholder="Name" type="text" />
+          </div>
+          <div class="p-2 w-1/2">
+            <input
+              class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-purple-500 text-base px-4 py-2"
+              placeholder="Email" type="email" />
+          </div>
+          <div class="p-2 w-full">
+            <textarea
+              class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none h-48 focus:border-purple-500 text-base px-4 py-2 resize-none block"
+              placeholder="Message"></textarea>
+          </div>
+          <div class="p-2 w-full">
+            <a class="text-purple-500" href="mailto:zindottechnologies@gmail.com"><button
+                class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">
+                Send
+              </button></a>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+            <a class="text-purple-500" href="mailto:zindottechnologies@gmail.com">zindottechnologies@gmail.com</a>
+            <br />Phone no:
+            <a class="text-purple-500" href="tel:6238296993">6238296993</a>
+            <p class="leading-normal my-5">
+              Kochi
+              <br />
+            </p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--Footer ends-->
-  </body>
+  <!--Contact Ends-->
+
+  <!--Footer-->
+
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <img src="img/zindotlogo.ico" alt="Zindot" width="50" height="50" />
+        <span class="ml-3 text-xl">ZINDOT</span>
+      </a>
+      <p class="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+        © 2020 Zindot
+        <!-- <a href="" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer"></a> -->
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-600">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <!--Footer ends-->
+</body>
+
+<script src="index.js"></script>
+
 </html>
